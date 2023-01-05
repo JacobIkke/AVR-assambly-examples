@@ -36,10 +36,9 @@ main:
 	cbi PORTB, PB4              	; PB4 LOW
    	 rcall delay1			; delay 
 
-	rcall delay_long		; jump to main, infinity loop
+	rcall delay_long		; fixed delay between two examples. 
 
-
-	rjmp main   
+	rjmp main   			; jump to main, infinity loop
 
 delay1:					; The outer loop
    	ldi r16, 255               	; Initial the timers values
