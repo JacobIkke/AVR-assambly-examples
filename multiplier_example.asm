@@ -5,6 +5,7 @@
 ; Author : PeetGaming
 ;
 ; Software multipleir function, because attiny cores don't have MUL instuction we must do it in software.
+; I used PB4 as led output for debug, this function will change the loop delay with the multipleir result, a higher multipleir result means slower pulse. 
 
 .dseg					; Start Data segment
 .org 0x0060				; Start storing, for attiny13 the RAM starts at 0x0060 end at 0x009F, 64 x 8bit
