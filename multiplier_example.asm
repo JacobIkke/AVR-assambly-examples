@@ -37,7 +37,7 @@ main:
 multplier: 
 	lds	r16, multiplier		; load multipleir form memory into register
 	lds	r17, multiplicand	; load multiplicand form memory into register
-	ldi	r19, 0			; Load zero into r18 to make sure that it's zero when we start the multipleir loop
+	ldi	r19, 0			; Load zero into r19(result register) to make sure that it's zero when we start the multipleir loop
 multi_inner1:
 	add r19, r16			; add multiplicand to the result register
 	dec r17				; decrease the multiplier
